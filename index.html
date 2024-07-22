@@ -166,7 +166,7 @@
         <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:info@rkstore.com">info@rkstore.com</a><br>
       </div>
       <div class="w3-col m6">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form method="POST" id="contact-form">
           <input type="hidden" name="access_key" value="87ad78f7-dc8c-435f-a06d-c79f442a4d99">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
@@ -184,6 +184,7 @@
           <!-- Custom Confirmation / Success Page -->
           <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          <span id="result"></span>
         </form>
       </div>
     </div>
