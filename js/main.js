@@ -55,14 +55,17 @@ form.addEventListener('submit', function(e) {
       let json = await response.json();
       if (response.status == 200) {
         result.innerHTML = json.message;
+        result.style.color = "green";
       } else {
         console.log(response);
         result.innerHTML = json.message;
+        result.style.color = "red";
       }
     })
     .catch(error => {
       console.log(error);
       result.innerHTML = "Something went wrong!";
+      result.style.color = "red";
     })
     .then(function() {
       form.reset();
