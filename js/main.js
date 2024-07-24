@@ -25,7 +25,7 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
+var modal = document.getElementById('itemsModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
