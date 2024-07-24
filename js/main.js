@@ -35,13 +35,17 @@ window.onclick = function(event) {
 // Web3Forms
 const form = document.getElementById('contact-form');
 const result = document.getElementById('result');
+const variableBtn = document.getElementById('variable-btn');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const formData = new FormData(form);
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
-  result.innerHTML = "Please wait..."
+  variableBtn.style.width="71px";
+  setTimeout(() => {
+    result.innerHTML = "Please wait..."
+  }, 300);
 
   fetch('https://api.web3forms.com/submit', {
     method: 'POST',
@@ -71,6 +75,7 @@ form.addEventListener('submit', function(e) {
       form.reset();
       setTimeout(() => {
         result.style.display = "none";
+        variableBtn.style.width="100%";
       }, 3000);
     });
 });

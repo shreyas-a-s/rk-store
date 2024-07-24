@@ -9,3 +9,7 @@ body {
 .mySlides {
   display: none;
 }
+
+#variable-btn {
+  transition: width 0.3s ease-in;
+}
