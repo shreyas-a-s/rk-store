@@ -25,10 +25,16 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('itemsModal');
+var groceryModal = document.getElementById('groceryItemsModal');
+var stationeryModal = document.getElementById('stationeryItemsModal');
+var othersModal = document.getElementById('otherItemsModal');
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == groceryModal) {
+    groceryModal.style.display = "none";
+  } else if (event.target == stationeryModal) {
+    stationeryModal.style.display = "none";
+  } else if (event.target == othersModal) {
+    othersModal.style.display = "none";
   }
 }
 
