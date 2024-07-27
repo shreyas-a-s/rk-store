@@ -28,6 +28,7 @@ function myFunction() {
 var groceryModal = document.getElementById('groceryItemsModal');
 var stationeryModal = document.getElementById('stationeryItemsModal');
 var othersModal = document.getElementById('otherItemsModal');
+var searchModal = document.getElementById('searchModal');
 window.onclick = function(event) {
   if (event.target == groceryModal) {
     groceryModal.style.display = "none";
@@ -35,6 +36,8 @@ window.onclick = function(event) {
     stationeryModal.style.display = "none";
   } else if (event.target == othersModal) {
     othersModal.style.display = "none";
+  } else if (event.target == searchModal) {
+    searchModal.style.display = "none";
   }
 }
 
