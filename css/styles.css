@@ -13,3 +13,7 @@ body {
 #variable-btn {
   transition: width 0.3s ease-in;
 }
+
+.slide-caption h3, .slide-caption p {
+  text-shadow:1px 1px 0 #000;
+}
