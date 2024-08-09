@@ -1,4 +1,4 @@
-// Automatic Slideshow - change image every 4 seconds
+// Automatic Slideshow - change image every 2.5 seconds
 var myIndex = 0;
 carousel();
 
@@ -11,7 +11,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000);
+  setTimeout(carousel, 2500);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
